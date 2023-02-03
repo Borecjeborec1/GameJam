@@ -1,7 +1,7 @@
 # TODO
 - animace charakteru
-- Assety okna/svíčky/hlavní nepřítel (Ryuuna0/borecjeborec1)
-- Vytvoření mapy (Ryuuna0)
+- Assety hlavní nepřítel/dekorace (Ryuuna0)
+- Vytvoření mapy (Ryuuna0/borecjeborec1)
 - Zvuky (?)
 - Vzduch (?)
 - Main menu
@@ -10,7 +10,8 @@
 - Hlavní programace funkčnosti
 
 # DONE
+- Assety okna/svíčky (Ryuuna0)
 - Assety hlavního hrdiny + základ pozadí (Ryuuna0)
 - Programace pohybu -> vložit assety (borecjeborec1)
-- Tilemapa pozadí (Ryuuna0/borecjeborec1)
+- Tilemapa pozadí (Ryuuna0)
 - Světla (borecjeborec1)
