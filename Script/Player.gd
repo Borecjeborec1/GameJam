@@ -7,8 +7,6 @@ export var ROLL_SPEED = 150
 
 
 var velocity = Vector2.ZERO
-var roll_vector = Vector2.DOWN
-var roll_finished = false
 
 
 func _physics_process(delta):
