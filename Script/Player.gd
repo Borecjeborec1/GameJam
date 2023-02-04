@@ -6,8 +6,9 @@ export var MAX_SPEED = 170
 export var ROLL_SPEED = 150
 
 
-var velocity = Vector2.ZERO
 
+var velocity = Vector2.ZERO
+var sebrane_zapalky = 0
 
 func _physics_process(delta):
 	var input_vector = Vector2.ZERO
