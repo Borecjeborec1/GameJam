@@ -25,20 +25,21 @@ cell_size = Vector2( 32, 32 )
 show_collision = true
 collision_use_kinematic = true
 format = 1
-tile_data = PoolIntArray( 65536, -1073741816, 0, 65541, 11, 0, 65542, 13, 0, 65545, 8, 0, 65546, 11, 0, 65547, 12, 0, 262154, 10, 0, 327685, 10, 0, 655365, 12, 0, 655366, 12, 0, 720902, 12, 0, 720903, 12, 0, 720904, 12, 0, 720912, 10, 0, 983079, 9, 0, 1900574, 13, 0, 2162723, 10, 0 )
+tile_data = PoolIntArray( 65541, 11, 0, 65542, 13, 0, 65545, 8, 0, 65546, 11, 0, 65547, 12, 0, 262154, 10, 0, 327685, 10, 0, 327725, 8, 0, 327726, 13, 0, 393217, -1073741815, 0, 393261, 8, 0, 458801, 13, 0, 458802, 10, 0, 458803, 13, 0, 458805, 10, 0, 458807, 13, 0, 458808, 10, 0, 458809, 13, 0, 655365, 12, 0, 655366, 12, 0, 655408, 13, 0, 655410, 12, 0, 655411, 12, 0, 655418, 13, 0, 720902, 12, 0, 720903, 12, 0, 720904, 12, 0, 720911, 13, 0, 720912, 10, 0, 720913, 13, 0, 720944, 13, 0, 720946, 12, 0, 786469, 10, 0, 786480, 13, 0, 786490, 13, 0, 851981, 13, 0, 851983, 11, 0, 852016, 13, 0, 917552, 13, 0, 917556, 11, 0, 917562, 11, 0, 983052, 12, 0, 983057, 11, 0, 983079, 9, 0, 983088, 13, 0, 983095, 12, 0, 1048624, 13, 0, 1114160, 13, 0, 1179668, 13, 0, 1179670, 13, 0, 1179704, 13, 0, 1310751, 13, 0, 1441820, 13, 0, 1572892, 13, 0, 1769509, 13, 0, 1900574, 13, 0, 2162723, 10, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 90, 34 )
+position = Vector2( 96.5483, 43.5656 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 90, 34 )
+position = Vector2( 96.5483, 43.5656 )
 current = true
 zoom = Vector2( 0.6, 0.6 )
 
 [node name="Tma" type="CanvasModulate" parent="."]
+visible = false
 color = Color( 0, 0, 0, 1 )
 
 [node name="Okno" parent="." instance=ExtResource( 4 )]
@@ -55,6 +56,30 @@ position = Vector2( 339, 133 )
 
 [node name="Svíčka2" parent="svicky" instance=ExtResource( 2 )]
 position = Vector2( 178, 166 )
+
+[node name="Svíčka3" parent="svicky" instance=ExtResource( 2 )]
+position = Vector2( 1144, 1069 )
+scale = Vector2( 1.00468, 1.00997 )
+
+[node name="Svíčka4" parent="svicky" instance=ExtResource( 2 )]
+position = Vector2( 533, 361 )
+scale = Vector2( 1.00468, 1.00997 )
+
+[node name="Svíčka5" parent="svicky" instance=ExtResource( 2 )]
+position = Vector2( 1209, 396 )
+scale = Vector2( 1.00468, 1.00997 )
+
+[node name="Svíčka6" parent="svicky" instance=ExtResource( 2 )]
+position = Vector2( 1628, 226 )
+scale = Vector2( 1.00468, 1.00997 )
+
+[node name="Svíčka7" parent="svicky" instance=ExtResource( 2 )]
+position = Vector2( 1818, 228 )
+scale = Vector2( 1.00468, 1.00997 )
+
+[node name="Svíčka8" parent="svicky" instance=ExtResource( 2 )]
+position = Vector2( 1721, 228 )
+scale = Vector2( 1.00468, 1.00997 )
 
 [node name="Zápalka" parent="." instance=ExtResource( 5 )]
 position = Vector2( 225.943, 115.845 )
