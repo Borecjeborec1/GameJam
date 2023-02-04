@@ -13,7 +13,6 @@ func _ready():
 
 func _process(delta):
 	if je_zapnuta:
-		print(counter)
 		counter+=1
 		if jde_doprava:
 			if $"Světlo".position.x > 1.5:
