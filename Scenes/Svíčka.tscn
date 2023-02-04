@@ -50,6 +50,7 @@ animation = "Idle"
 shape = SubResource( 1 )
 
 [node name="Světlo" type="Light2D" parent="."]
+visible = false
 position = Vector2( 0, -11 )
 texture = ExtResource( 1 )
 texture_scale = 0.2
@@ -57,6 +58,9 @@ color = Color( 0.941176, 0.631373, 0.266667, 1 )
 energy = 0.9
 
 [node name="Particles2D" type="Particles2D" parent="."]
+visible = false
 position = Vector2( 1, -7 )
 amount = 2
 process_material = SubResource( 5 )
+
+[connection signal="body_entered" from="." to="." method="_on_Svka_body_entered"]
