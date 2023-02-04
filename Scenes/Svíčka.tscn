@@ -19,7 +19,7 @@ animations = [ {
 [sub_resource type="Curve" id=3]
 _data = [ Vector2( 0, 0.380682 ), 0.0, 2.99364, 0, 0, Vector2( 0.741573, 0.117045 ), -3.47609, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=4]
+[sub_resource type="CurveTexture" id=6]
 curve = SubResource( 3 )
 
 [sub_resource type="ParticlesMaterial" id=5]
@@ -36,7 +36,7 @@ tangential_accel_random = 1.0
 angle = -720.0
 angle_random = 1.0
 scale = 1.5
-scale_curve = SubResource( 4 )
+scale_curve = SubResource( 6 )
 color = Color( 0.160784, 0.156863, 0.152941, 1 )
 
 [node name="Svíčka" type="Area2D"]

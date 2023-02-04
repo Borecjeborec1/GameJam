@@ -12,7 +12,6 @@ config_version=4
 
 config/name="GameJaM"
 run/main_scene="res://Scenes/MainScene.tscn"
-config/icon="res://icon.png"
 
 [gui]
 
