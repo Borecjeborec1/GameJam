@@ -1,6 +1,7 @@
 # TODO
 - Náhodné rozmístění 8 květin
 - Náhodné sirky
+- Nepřátelé/pavučiny
 - (Animace charakteru)
 - Zvuky (?)
 - Vzduch (?)
