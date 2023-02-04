@@ -6,9 +6,10 @@
 [ext_resource path="res://Assets/stul.png" type="Texture" id=7]
 [ext_resource path="res://Assets/skrin.png" type="Texture" id=8]
 [ext_resource path="res://Assets/stul_z_vrchu.png" type="Texture" id=9]
-[ext_resource path="res://Assets/zelenec.png" type="Texture" id=10]
+[ext_resource path="res://Assets/kytky/zelenec.png" type="Texture" id=10]
 [ext_resource path="res://Assets/pavucina.png" type="Texture" id=11]
-[ext_resource path="res://Assets/avokado.png" type="Texture" id=13]
+[ext_resource path="res://Assets/kytky/avokado.png" type="Texture" id=13]
+
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 13, 10 )
