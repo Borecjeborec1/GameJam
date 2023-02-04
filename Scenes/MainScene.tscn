@@ -39,7 +39,6 @@ current = true
 zoom = Vector2( 0.6, 0.6 )
 
 [node name="Tma" type="CanvasModulate" parent="."]
-visible = false
 color = Color( 0, 0, 0, 1 )
 
 [node name="Okno" parent="." instance=ExtResource( 4 )]
