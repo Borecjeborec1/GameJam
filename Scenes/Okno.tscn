@@ -7,29 +7,24 @@
 extents = Vector2( 18, 31.5 )
 
 [sub_resource type="Curve" id=6]
-_data = [ Vector2( 0, 0.380682 ), 0.0, 2.99364, 0, 0, Vector2( 0.741573, 0.117045 ), -3.47609, 0.0, 0, 0 ]
+_data = [ Vector2( 0, 0.457955 ), 0.0, 1.61818, 0, 0, Vector2( 1, 0.342045 ), -0.455114, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=4]
 curve = SubResource( 6 )
 
 [sub_resource type="ParticlesMaterial" id=7]
-emission_shape = 1
-emission_sphere_radius = 3.0
+emission_shape = 2
+emission_box_extents = Vector3( 10, 20, 1 )
 flag_disable_z = true
-spread = 0.0
-gravity = Vector3( 0, 0, 0 )
+gravity = Vector3( 0.5, 0.073, 0 )
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 linear_accel = 10.0
-radial_accel = 10.0
-tangential_accel_random = 1.0
-angle = -720.0
-angle_random = 1.0
 scale = 1.5
 scale_curve = SubResource( 4 )
-color = Color( 0.160784, 0.156863, 0.152941, 1 )
+color = Color( 0.933333, 0.933333, 0.933333, 1 )
 
-[node name="Okno" type="Area2D"]
+[node name="Okno" type="StaticBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
@@ -39,12 +34,12 @@ position = Vector2( -9, 1.5 )
 shape = SubResource( 8 )
 
 [node name="Světlo" type="Light2D" parent="."]
-position = Vector2( -16, 3 )
+position = Vector2( -18, 1 )
 texture = ExtResource( 1 )
 texture_scale = 0.2
 energy = 0.9
 
 [node name="Particles2D" type="Particles2D" parent="."]
-position = Vector2( 1, -7 )
-amount = 2
+position = Vector2( -2, 0 )
+amount = 5
 process_material = SubResource( 7 )

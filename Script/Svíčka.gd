@@ -17,3 +17,5 @@ func _process(delta):
 		if $"Světlo".position.x < .3:
 			jde_doprava = true
 		$"Světlo".position.x -= .3
+
+
