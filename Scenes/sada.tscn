@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Assets/podlaha.png" type="Texture" id=1]
 [ext_resource path="res://Assets/tma.png" type="Texture" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://Assets/kytky/bonsai.png" type="Texture" id=21]
 [ext_resource path="res://Assets/kytky/levandule.png" type="Texture" id=22]
 [ext_resource path="res://Assets/druhastrana.png" type="Texture" id=23]
+[ext_resource path="res://Assets/tma2.png" type="Texture" id=24]
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 13, 10 )
@@ -152,11 +153,15 @@ position = Vector2( 2.5, 0 )
 shape = SubResource( 11 )
 
 [node name="Obraz" type="Sprite" parent="."]
-position = Vector2( 272, 182 )
+position = Vector2( 265, 180 )
 texture = ExtResource( 4 )
 
+[node name="Tma2" type="Sprite" parent="."]
+position = Vector2( 336, 194 )
+texture = ExtResource( 24 )
+
 [node name="Lano" type="Sprite" parent="."]
-position = Vector2( 327, 192 )
+position = Vector2( 159, 274 )
 texture = ExtResource( 17 )
 
 [node name="Koberec1" type="Sprite" parent="."]
