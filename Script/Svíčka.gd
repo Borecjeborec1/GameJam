@@ -13,7 +13,7 @@ func _ready():
 
 func _process(delta):
 	if je_zapnuta:
-		if rostliny.find(rostlina) != rozsvicene.find(rostlina):
+		if $"../../8Kytek".rostliny.find(name) != $"../../8Kytek".rozsvicene.find(name):
 			counter+=1
 		if jde_doprava:
 			if $"Světlo".position.x > 1.5:
