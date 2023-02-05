@@ -3,7 +3,6 @@
 - Nepřátelé/pavučiny
 - Zvuky (?)
 - Vzduch (?)
-- Main menu
 - Pause
 - End game 
 - Po přejití kytky zhasni
@@ -19,3 +18,4 @@
 - Náhodné rozmístění 8 květin 
 - Hlavní programace funkčnosti
 - End game -> Klíč/Dveře
+- Main menu (Ryuuna0)
