@@ -27,6 +27,7 @@ func _process(delta):
 			$"Světlo".visible = false
 			$Particles2D.visible = false
 			$AnimatedSprite.playing = false
+			$"../../8Kytek".zhasni(name)
 
 
 
@@ -41,4 +42,5 @@ func _on_Svka_body_entered(body):
 			death_timer = randi() % 5000 + 5000
 			counter = 0
 			body.sebrane_zapalky-=1
-
+			body.rozsvicene_svicky.append(name)
+			$"../../8Kytek".rozsvit(name)

@@ -1,16 +1,34 @@
 extends Node2D
 
-var positions = [112,80,48,16,-16,-48,-80,-112]
+var positions = [-112, -80, -48, -16, 16, 48, 80, 112]
+var rostliny = ["Avokado","Bonsai","Kapradiny","Levandule","Mochyne","Orchidej","Zelenec","Zeleneczezhora"]
+var rozsvicene = []
+
 
 func _ready():
 	randomize()
-	positions.shuffle()
-	$Avokado.position.y = positions[0]
-	$Bonsai.position.y = positions[1]
-	$Kapradiny.position.y = positions[2]
-	$Levandule.position.y = positions[3]
-	$Mochyne.position.y = positions[4]
-	$Orchidej.position.y = positions[5]
-	$Zelenec.position.y = positions[6]
-	$Zeleneczezhora.position.y = positions[7]
+	rostliny.shuffle()
+	print(rostliny)
+	for i in len(rostliny):
+		get_node(rostliny[i]).position.y = positions[i]
 
+
+func rozsvit(rostlina):
+	rozsvicene.append(rostlina)
+	if rostliny.find(rostlina) == rozsvicene.find(rostlina):
+		get_node(rostlina).modulate = "#00FF00"
+		if len(rostliny) ==  len(rozsvicene):
+			end_game()
+	else:
+		get_node(rostlina).modulate = "#FF0000"
+	
+	print(rozsvicene)
+
+func zhasni(rostlina):
+	rozsvicene.erase(rostlina)
+	get_node(rostlina).modulate = "#fff"
+	print(rozsvicene)
+	
+	
+func end_game():
+	pass

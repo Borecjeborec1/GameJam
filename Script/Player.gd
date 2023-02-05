@@ -9,6 +9,7 @@ export var ROLL_SPEED = 150
 
 var velocity = Vector2.ZERO
 var sebrane_zapalky = 0
+var rozsvicene_svicky = []
 
 func _physics_process(delta):
 	var input_vector = Vector2.ZERO

@@ -49,6 +49,7 @@ tile_data = PoolIntArray( 1, 18, 0, 6, 18, 0, 7, 31, 0, 8, 31, 0, 19, 31, 0, 20,
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 96.5483, 43.5656 )
+MAX_SPEED = 500
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
@@ -64,34 +65,34 @@ color = Color( 0, 0, 0, 1 )
 
 [node name="Svíčky" type="Node" parent="."]
 
-[node name="Svíčka" parent="Svíčky" instance=ExtResource( 2 )]
+[node name="Orchidej" parent="Svíčky" instance=ExtResource( 2 )]
 position = Vector2( 178, 166 )
 
-[node name="Svíčka2" parent="Svíčky" instance=ExtResource( 2 )]
+[node name="Kapradiny" parent="Svíčky" instance=ExtResource( 2 )]
 position = Vector2( 1144, 1069 )
 scale = Vector2( 1.00468, 1.00997 )
 
-[node name="Svíčka3" parent="Svíčky" instance=ExtResource( 2 )]
+[node name="Zeleneczezhora" parent="Svíčky" instance=ExtResource( 2 )]
 position = Vector2( 533, 361 )
 scale = Vector2( 1.00468, 1.00997 )
 
-[node name="Svíčka4" parent="Svíčky" instance=ExtResource( 2 )]
+[node name="Zelenec" parent="Svíčky" instance=ExtResource( 2 )]
 position = Vector2( 1209, 396 )
 scale = Vector2( 1.00468, 1.00997 )
 
-[node name="Svíčka5" parent="Svíčky" instance=ExtResource( 2 )]
+[node name="Bonsai" parent="Svíčky" instance=ExtResource( 2 )]
 position = Vector2( 1628, 226 )
 scale = Vector2( 1.00468, 1.00997 )
 
-[node name="Svíčka6" parent="Svíčky" instance=ExtResource( 2 )]
+[node name="Levandule" parent="Svíčky" instance=ExtResource( 2 )]
 position = Vector2( 1015, 390 )
 scale = Vector2( 1.00468, 1.00997 )
 
-[node name="Svíčka7" parent="Svíčky" instance=ExtResource( 2 )]
+[node name="Mochyne" parent="Svíčky" instance=ExtResource( 2 )]
 position = Vector2( 243, 1264 )
 scale = Vector2( 1.00468, 1.00997 )
 
-[node name="Svíčka8" parent="Svíčky" instance=ExtResource( 2 )]
+[node name="Avokado" parent="Svíčky" instance=ExtResource( 2 )]
 position = Vector2( 1883, 371 )
 scale = Vector2( 1.00468, 1.00997 )
 
@@ -162,4 +163,4 @@ position = Vector2( 799, 1294 )
 scale = Vector2( 1.00468, 1.00997 )
 
 [node name="8Kytek" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1553.73, 447.538 )
+position = Vector2( 1552.73, 446.548 )
