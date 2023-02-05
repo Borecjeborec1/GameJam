@@ -64,6 +64,44 @@ MAX_SPEED = 500
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
 
+[node name="Pause" type="VBoxContainer" parent="Player"]
+pause_mode = 2
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -137.357
+margin_top = -7.92098
+margin_right = 92.6427
+margin_bottom = 165.079
+script = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="Player/Pause"]
+margin_right = 230.0
+margin_bottom = 14.0
+text = "Paused"
+align = 1
+valign = 1
+
+[node name="Control" type="Control" parent="Player/Pause"]
+margin_top = 18.0
+margin_right = 230.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="resume_button" type="Button" parent="Player/Pause"]
+margin_top = 32.0
+margin_right = 230.0
+margin_bottom = 52.0
+text = "Resume"
+
+[node name="quit_button" type="Button" parent="Player/Pause"]
+margin_top = 56.0
+margin_right = 230.0
+margin_bottom = 76.0
+text = "Quit"
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 96.5483, 43.5656 )
 current = true
@@ -178,43 +216,5 @@ position = Vector2( 17.9162, 702.991 )
 [node name="Klíč" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1775.69, 427.736 )
 
-[node name="Pause" type="VBoxContainer" parent="."]
-visible = false
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -40.809
-margin_top = 35.6446
-margin_right = 189.191
-margin_bottom = 208.645
-rect_clip_content = true
-script = ExtResource( 10 )
-
-[node name="Label" type="Label" parent="Pause"]
-margin_right = 230.0
-margin_bottom = 14.0
-text = "Paused"
-align = 1
-valign = 1
-
-[node name="Control" type="Control" parent="Pause"]
-margin_top = 18.0
-margin_right = 230.0
-margin_bottom = 28.0
-rect_min_size = Vector2( 0, 10 )
-
-[node name="resume_button" type="Button" parent="Pause"]
-margin_top = 32.0
-margin_right = 230.0
-margin_bottom = 52.0
-text = "Resume"
-
-[node name="quit_button" type="Button" parent="Pause"]
-margin_top = 56.0
-margin_right = 230.0
-margin_bottom = 76.0
-text = "Quit"
-
-[connection signal="pressed" from="Pause/resume_button" to="Pause" method="_on_resume_button_pressed"]
-[connection signal="pressed" from="Pause/quit_button" to="Pause" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Player/Pause/resume_button" to="Player/Pause" method="_on_resume_button_pressed"]
+[connection signal="pressed" from="Player/Pause/quit_button" to="Player/Pause" method="_on_quit_button_pressed"]
