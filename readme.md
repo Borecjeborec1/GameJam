@@ -6,7 +6,7 @@
 - Main menu
 - Pause
 - End game 
-
+- Po přejití kytky zhasni
 
 # DONE
 - Assety okna/svíčky (Ryuuna0)
