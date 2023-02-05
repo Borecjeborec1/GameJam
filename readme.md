@@ -5,7 +5,7 @@
 - Vzduch (?)
 - Main menu
 - Pause
-- End game
+- End game 
 
 
 # DONE
@@ -16,5 +16,6 @@
 - Tilemapa pozadí (Ryuuna0)
 - Světla (borecjeborec1)
 - Assety hlavní nepřítel/dekorace (Ryuuna0)
-- Náhodné rozmístění 8 květin
+- Náhodné rozmístění 8 květin 
 - Hlavní programace funkčnosti
+- End game -> Klíč/Dveře
