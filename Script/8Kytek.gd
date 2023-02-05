@@ -18,7 +18,7 @@ func rozsvit(rostlina):
 	if rostliny.find(rostlina) == rozsvicene.find(rostlina):
 		get_node(rostlina).modulate = "#00FF00"
 		if len(rostliny) ==  len(rozsvicene):
-			end_game()
+			zobraz_klic()
 	else:
 		get_node(rostlina).modulate = "#FF0000"
 	
@@ -30,5 +30,6 @@ func zhasni(rostlina):
 	print(rozsvicene)
 	
 	
-func end_game():
-	pass
+func zobraz_klic():
+	$"../Klíč".visible = true
+	$"../Klíč".position.y += 50
