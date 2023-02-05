@@ -3,7 +3,6 @@
 - Nepřátelé/pavučiny
 - Zvuky (?)
 - Vzduch (?)
-- Pause
 - End game 
 - Po přejití kytky zhasni
 
@@ -19,3 +18,4 @@
 - Hlavní programace funkčnosti
 - End game -> Klíč/Dveře
 - Main menu (Ryuuna0)
+- Pause
