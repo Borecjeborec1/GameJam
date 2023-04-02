@@ -1,7 +1,7 @@
 extends Control
 
-func _ready() -> void:
-	$VBoxContainer/start_button.grab_focus()
+#func _ready() -> void:
+#	$VBoxContainer2/start_button.grab_focus()
 
 
 func _on_start_button_pressed() -> void:

@@ -34,6 +34,6 @@ shape = SubResource( 1 )
 
 [node name="Světlo" type="Light2D" parent="."]
 texture = ExtResource( 3 )
-texture_scale = 0.5
+texture_scale = 0.4
 energy = 0.8
 shadow_enabled = true
